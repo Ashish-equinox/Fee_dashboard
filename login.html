@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Dashboard</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa;
+            color: #000;
+        }
+
+        .dashboard {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #007bff;
+            padding: 20px;
+            color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 1.8rem;
+        }
+
+        button#logoutBtn {
+            background-color: #dc3545;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1rem;
+        }
+
+        button#logoutBtn:hover {
+            background-color: #c82333;
+        }
+
+        .overview {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .employee-info {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            flex: 1 1 100%;
+            text-align: center;
+        }
+
+        .employee-image img {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 15px;
+        }
+
+        h2 {
+            margin-top: 0;
+            font-size: 1.6rem;
+            color: #007bff;
+        }
+
+        .card {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+            padding: 20px;
+            flex: 1 1 300px;
+            text-align: center;
+        }
+
+        .card h3 {
+            font-size: 1.2rem;
+            color: #007bff;
+            margin-bottom: 10px;
+        }
+
+        .card p {
+            font-size: 1.2rem;
+            font-weight: bold;
+            color: #343a40;
+        }
+
+        @media (max-width: 768px) {
+            .overview {
+                flex-direction: column;
+            }
+        }
+
+        .dashboard-btn {
+            display: inline-block;
+            background-color: #28a745;
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-size: 1rem;
+            cursor: pointer;
+        }
+
+        .dashboard-btn:hover {
+            background-color: #218838;
+        }
+    </style>
+</head>
+<body>
+    <div class="dashboard">
+        <header>
+            <h1>Employee Dashboard</h1>
+            <button id="logoutBtn">Logout</button>
+        </header>
+
+        <section class="overview">
+            <div class="employee-info">
+                <div class="employee-image">
+                    <img src="img.jpeg" alt="Employee Image" id="employeePhoto">
+                </div>
+                <h2>Employee Info</h2>
+            </div>
+
+            <div class="card">
+                <h3>Number of Leaves</h3>
+                <p id="employeeLeaves">5</p>
+            </div>
+            <div class="card">
+                <h3>Number of Days Attended</h3>
+                <p id="employeeDaysAttended">15</p>
+            </div>
+            <div class="card">
+                <h3>Meeting Messages</h3>
+                <p id="employeeMessages">No new messages</p>
+            </div>
+
+            <!-- Link to another page (Employee Dashboard) -->
+            <a href="emloyee.html" class="dashboard-btn">Go to Employee Dashboard</a>
+        </section>
+    </div>
+
+    <script src="employee.js" defer></script>
+</body>
+</html>

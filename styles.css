@@ -1,0 +1,104 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+    color: #000000;
+}
+
+header {
+    background-color: #000000;
+    padding: 20px;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 10px rgb(255, 255, 255);
+}
+
+header h1 {
+    font-size: 2rem;
+    color: white;
+}
+
+header img {
+    border: 2px solid white;
+}
+
+.card {
+    border: none;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.card-title {
+    font-size: 1.2rem;
+}
+
+.card-text {
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.list-group-item {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    border: none;
+    background-color: #f8f9fa;
+}
+
+.list-group-item img {
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    margin-right: 20px;
+    object-fit: cover;
+}
+
+.list-group-item .btn {
+    margin-left: auto;
+}
+
+.btn-secondary {
+    background-color: #6c757d;
+    border-color: #6c757d;
+}
+
+.btn-secondary:hover {
+    background-color: #5a6268;
+}
+
+.shadow {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.text-primary {
+    color: #007bff !important;
+}
+
+.text-success {
+    color: #28a745 !important;
+}
+
+.text-info {
+    color: #17a2b8 !important;
+}
+/* Add shadow and hover effects */
+.card, .list-group-item {
+    transition: all 0.2s ease-in-out;
+}
+
+.card:hover, .list-group-item:hover {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Button Styles */
+.btn {
+    font-size: 1rem;
+    padding: 10px 20px;
+}
+
+.btn-info, .btn-success {
+    transition: background-color 0.3s ease;
+}
+
+.btn-info:hover, .btn-success:hover {
+    background-color: #17a2b8;
+}
